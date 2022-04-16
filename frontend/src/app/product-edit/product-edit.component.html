@@ -1,0 +1,39 @@
+<div class="page-container">
+    <div [hidden]="data==undefined" class="product-container">
+        <div class="image-data-row-container">
+            <img src={{data.imageURL}} class="image" />
+            <div class="data-column-container">
+                <div class="label-row-container">
+                    <label class="name">Name</label>
+                    <label class="rating">Rating</label>
+                </div>
+                <div class="data-row-container">
+                    <input class="name form-control" [(ngModel)]="data.name">
+                    <input class="rating form-control" type="number" min="1" max="5" [(ngModel)]="data.rating">
+                </div>
+                <div class="label-row-container">
+                    <label class="name">Price ($)</label>
+                    <label class="rating">Quantity</label>
+                </div>
+                <div class="data-row-container">
+                    <input class="name form-control" [(ngModel)]="data.price">
+                    <input class="rating form-control" type="number" min="0" max="100" [(ngModel)]="data.quantity">
+                </div>
+                <div class="button-row-container">
+                    <button class="btn btn-success btn-sm" (click)="save()">Save</button>
+                    <button class="btn btn-danger btn-sm"(click)="delete()">Delete</button>
+                </div>
+            </div>
+        </div>
+        <label>Image Url</label>
+        <input class="description form-control" [(ngModel)]="data.imageURL">
+        <label>Description</label>
+        <input class="description form-control" [(ngModel)]="data.description">
+        <label> Image Credits</label>
+        <input class="description form-control" [(ngModel)]="data.imageCredits">
+        <label>Comments</label>
+        <textarea class="comments form-control" [(ngModel)]="data.comments"></textarea>
+
+    </div>
+</div>  
+

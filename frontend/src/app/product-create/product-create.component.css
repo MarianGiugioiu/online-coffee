@@ -1,0 +1,96 @@
+.page-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 92vh;
+    background-color: #98B4AA;
+}
+
+.product-container {
+    display: flex;
+    flex-direction: column;
+    width: 47vw;
+    height: 77vh;
+    background-color: #F1E0AC;
+    border-radius: 15px 50px 30px;
+    margin: 3vh;
+    padding-left: 1vw;
+    padding-right: 1vw;
+    padding-top: 1vh;
+    padding-bottom: 3vh;
+}
+
+.image-container {
+    display: flex;
+    flex-direction: column;
+    width: 25vw;
+}
+
+.image-url {
+    width: 25vw;
+    height: 5vh;
+}
+
+.image-label{
+    width: 25vw;
+    height: 3vh;
+}
+
+.data-row-container {
+    display: flex;
+    justify-content: space-between;
+    width: 15vw;
+    height: 5vh;
+    margin-bottom: 2vh;
+}
+
+.button-row-container {
+    display: flex;
+    justify-content: center;
+    width: 15vw;
+    height: 5vh;
+    margin-top: 2vh;
+}
+
+.label-row-container {
+    display: flex;
+    justify-content: space-between;
+    width: 15vw;
+    height: 3vh;
+}
+
+.data-column-container {
+    display: flex;
+    flex-direction: column;
+    margin-left: 2vw;
+    width: 15vw;
+    height: 30vh;
+}
+
+.image-data-row-container {
+    display: flex;
+    width: 45vw;
+    height: 30vh;
+    margin-bottom: 3vh;
+}
+
+.name {
+    width: 9vw;
+}
+
+.rating {
+    width: 4vw;
+}
+
+.description {
+    width: 45vw;
+    height: 5vh;
+    margin-bottom: 2vh;
+}
+
+.comments {
+    width: 45vw;
+    height: 20vh;
+}
+

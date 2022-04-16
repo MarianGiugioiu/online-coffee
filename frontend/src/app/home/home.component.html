@@ -1,0 +1,19 @@
+<div class="home-container">
+    
+    <div class="content-container">
+        <div class="cart-list-create-container">
+            <app-cart-list-name></app-cart-list-name>
+            <app-cart-list></app-cart-list>
+            <div class="create-container">
+                <button class="btn btn-primary btn-sm" [hidden]="createHidden" (click)="goToCreate()">Create Product</button>
+            </div>
+        </div>
+        <div class="products-container">
+            <div class="filter-sorting-options-container">
+                <app-filter (filterEvent)="receiveFilter($event)"></app-filter>
+                <app-sorting-options (sortEvent)="receiveSortOptions($event)"></app-sorting-options>
+            </div>
+            <app-product-list [filter]="filter" [sortOptions]="sortOptions"></app-product-list>
+        </div>
+    </div>
+</div>

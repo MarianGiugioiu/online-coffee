@@ -1,0 +1,32 @@
+<div class="page-container">
+    <div [hidden]="data==undefined" class="product-container">
+        <div class="image-data-row-container">
+            <img src={{data?.imageURL}} class="image" />
+            <div class="data-column-container">
+                <div class="label-row-container">
+                    <label class="name">Name</label>
+                    <label class="rating">Rating</label>
+                </div>
+                <div class="data-row-container">
+                    <input class="name form-control" readonly [(ngModel)]="data.name">
+                    <input class="rating form-control" readonly [(ngModel)]="data.rating">
+                </div>
+                <div class="label-row-container">
+                    <label class="name">Price ($)</label>
+                    <label class="rating">Quantity</label>
+                </div>
+                <div class="data-row-container">
+                    <input class="name form-control" readonly [(ngModel)]="data.price">
+                    <input class="rating form-control" readonly [(ngModel)]="data.quantity">
+                </div>
+            </div>
+        </div>
+        <label>Description</label>
+        <input class="description form-control" readonly [(ngModel)]="data.description">
+        <label> Image Credits</label>
+        <input class="description form-control" readonly [(ngModel)]="data.imageCredits">
+        <label>Comments</label>
+        <textarea class="comments form-control" readonly [(ngModel)]="data.comments"></textarea>
+
+    </div>
+</div>  

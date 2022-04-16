@@ -1,0 +1,15 @@
+<nav class="navbar navbar-expand-lg navbar-light navbar-bg">
+    <div class="container-fluid">
+      <a class="navbar-brand lead fs-2" href="">Home</a>
+      
+        <div class="navbar-nav user-container">
+          <div [hidden]="loginHidden">
+            <button class="btn btn-secondary" (click)="login()">Sign In</button>
+          </div>
+          <div [hidden]="!loginHidden" class="logout-container">
+            <label class="label">{{userName}}</label>
+            <button class="btn btn-light" (click)="logout()">Logout</button>
+          </div>
+        </div>
+    </div>
+  </nav>

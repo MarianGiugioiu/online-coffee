@@ -1,0 +1,27 @@
+<div class="cart-list-options-container" *ngIf="myInfo$ | async as myInfo">
+    <div class="cart-item-container">
+        <label class="cart-item-index"><u>Nr.</u></label>
+        <label class="cart-item-name"><u>Name</u></label>
+        <label class="cart-item-price"><u>Price</u></label>
+        <label class="cart-item-quantity"><u>Quantity</u></label>
+        <label class="cart-item-cost"><u>Cost</u></label>
+    </div>
+    <div class="cart-list-container">
+        <div class="cart-item-container" *ngFor="let cartItem of myInfo?.CartItems; let indexOfelement=index;">
+            <p class="cart-item-index">{{indexOfelement + 1}}</p>
+            <p class="cart-item-name">{{cartItem.name}}</p>
+            <p class="cart-item-price">{{cartItem.price}}</p>
+            <p class="cart-item-quantity">{{cartItem.quantity}}</p>
+            <p class="cart-item-cost">{{cartItem.price * cartItem.quantity}}</p>
+        </div>
+    </div>
+    <p><u>Total</u></p>
+    <div class="cart-item-container">
+        <p class="cart-item-index">{{myInfo?.CartItems.length}}</p>
+        <p class="cart-item-name"></p>
+        <p class="cart-item-price"></p>
+        <p class="cart-item-quantity">{{totalQuantity}}</p>
+        <p class="cart-item-cost">{{totalCost}}</p>
+    </div>
+    <button class="btn btn-sm btn-danger" (click)="emptyCart()">Empty cart</button>
+</div>

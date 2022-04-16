@@ -1,0 +1,19 @@
+.user-container {
+    margin-right: 1vw;
+}
+
+.logout-container {
+    display: flex;
+    align-items: center;
+}
+
+.navbar-bg {
+    height: 8vh;
+    background-color: #495371;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.label {
+    color: white;
+    margin-right: 1vw;
+}

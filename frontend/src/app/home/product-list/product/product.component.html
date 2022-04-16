@@ -1,0 +1,25 @@
+<div [hidden]="data==undefined" class="product-container">
+    <div (click)="goToProduct()">
+        <img src={{data?.imageURL}} class="image" />
+    </div>
+    <div class="data-row-container">
+        <p>{{data?.name}}</p>
+        <div class="rating">
+            <label>Rating:</label>
+            <p>{{data?.rating}}</p>
+        </div>
+    </div>
+    <div class="data-row-container">
+        <p>{{data?.price | currency:'USD':'symbol'}}</p>
+        <div class="rating">
+            <label>Quantity:</label>
+            <p>{{data?.quantity}}</p>
+        </div>
+    </div>
+    <button class="btn btn-primary btn-sm button" [hidden]="buttonHidden" (click)="hideButton()">Add to cart</button>
+    <div [hidden]="!buttonHidden" class="quantity-selector">
+        <button class="btn btn-primary btn-sm" (click)="changeSelectedQuantity(-1)">-</button>
+        <p>{{selectedQuantity}}</p>
+        <button class="btn btn-primary btn-sm" (click)="changeSelectedQuantity(1)">+</button>
+    </div>
+</div>

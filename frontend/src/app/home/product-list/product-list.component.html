@@ -1,0 +1,15 @@
+<div class="product-list-container">
+    <div class="product-list-row-container">
+        <app-product [data]="products[0]"></app-product>
+        <app-product [data]="products[1]"></app-product>
+    </div>
+    <div class="product-list-row-container">
+        <app-product [data]="products[2]"></app-product>
+        <app-product [data]="products[3]"></app-product>
+    </div>
+    <div class="navigate">
+        <button class="btn btn-light btn-sm" [disabled]="page == 1" (click)="changePage(-1)"><-</button>
+        <p>{{page}}</p>
+        <button class="btn btn-light btn-sm" [disabled]="products.length < 4" (click)="changePage(1)">-></button>
+    </div>
+</div>

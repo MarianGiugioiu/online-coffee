@@ -1,0 +1,12 @@
+<div class="sorting-options-container">
+    <label class="label">Sort by:</label>
+    <mat-form-field class="select-container">
+        <mat-select class="select" [value]="columns[0].value" (selectionChange)="changeColumn($event.value)">
+          <mat-option *ngFor="let column of columns" [value]="column.value">
+            {{column.viewValue}}
+          </mat-option>
+        </mat-select>
+    </mat-form-field>
+    <label>DESC</label>
+    <input type="checkbox" [(ngModel)]="checked" (change)="changeOrder()">
+</div>

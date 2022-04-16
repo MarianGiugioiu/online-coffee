@@ -1,0 +1,10 @@
+<div class="filter-container">
+    <input placeholder="Search" class="filter form-control" [(ngModel)]="filterValue" (ngModelChange)="changeFilterValue($event)">
+    <mat-form-field class="select-container">
+        <mat-select class="select" [value]="columns[0].value" (selectionChange)="changeColumn($event.value)">
+          <mat-option *ngFor="let column of columns" [value]="column.value">
+            {{column.viewValue}}
+          </mat-option>
+        </mat-select>
+    </mat-form-field>
+</div>

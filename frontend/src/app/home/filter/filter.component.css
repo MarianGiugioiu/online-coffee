@@ -1,0 +1,21 @@
+.filter-container {
+    display: flex;
+    align-items: center;
+    width: 26vw;
+    height: 10vh;
+    margin-left: 5vw;
+}
+
+.select-container {
+    width: 10vw;
+    margin-left: 1vw;
+}
+
+.filter{
+    width: 15vw;
+    height: 5vh;
+}
+
+.select {
+    text-align: center;
+}

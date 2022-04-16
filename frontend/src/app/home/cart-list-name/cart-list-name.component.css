@@ -1,0 +1,12 @@
+.cart-list-name-container {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 30vw;
+    height: 10vh;
+}
+
+.input {
+    width: 15vw;
+    height: 5vh;
+}

@@ -1,0 +1,36 @@
+.product-container {
+    display: flex;
+    flex-direction: column;
+    width: 23vw;
+    height: 38vh;
+    background-color: white;
+    border: 1px solid black;;
+}
+
+.image {
+    width: 23vw;
+    height: 25vh;
+    background-repeat: no-repeat;
+}
+
+.data-row-container {
+    display: flex;
+    justify-content: space-between;
+    height: 3vh;
+    margin-left: 2vw;
+    margin-right: 2vw;
+}
+
+.quantity-selector {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 1.7vh;
+}
+
+.button {
+    margin-top: 1.7vh;
+}
+
+.rating {
+    display: flex;
+}

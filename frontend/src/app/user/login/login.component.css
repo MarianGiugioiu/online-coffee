@@ -1,0 +1,33 @@
+.page-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
+    height: 92vh;
+    background-color: #98B4AA;
+}
+
+.login-container {
+    display: flex;
+    flex-direction: column;
+    width: 20vw;
+    height: 35vh;
+    background-color: #F1E0AC;
+    border-radius: 15px 50px 30px;
+    padding-left: 2vw;
+    padding-right: 2vw;
+    padding-top: 1vh;
+    padding-bottom: 3vh;
+}
+
+.input {
+    width: 16vw;
+    height: 5vh;
+    margin-bottom: 3vh;
+}
+
+.button {
+    width: 6vw;
+    margin-top: 3vh;
+    align-self: center;
+}

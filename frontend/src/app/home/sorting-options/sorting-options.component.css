@@ -1,0 +1,21 @@
+.sorting-options-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 20vw;
+    height: 10vh;
+    margin-left: 4vw;
+}
+
+.select-container {
+    width: 10vw;
+    margin-right: 1vw;
+}
+
+.select {
+    text-align: center;
+}
+
+.label {
+    width: 5vw;
+}
