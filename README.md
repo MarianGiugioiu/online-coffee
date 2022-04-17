@@ -42,9 +42,12 @@ Apasand pe imaginea unui produs va redirectiona utilizatorul catre pagina de det
 
 Daca utilizatorul este un administrator atunci acesta poate sa editeze detaliile unui produs, sa il stearga sau sa creeze un nou produs.
 
+Pentru conectarea cu un cont de administrator se pot folosi email-ul `alin.ion@admin.com` si parola `123`. Pentru conectarea cu un cont simplu se pot folosi email-ul `alin.andrei@gmail.com` si parola `123`.
+
+
 Filtrarea produselor se realizeaza introducand o valoare in campul *Search* si alegand coloana pentru care se doreste filtrarea.
 
-Sortarea se realizeaza alegand o coloana in sectiune *Sort by:*. Checkboxul *DESC* ofera posibilatea sortarii in mod descrescator
+Sortarea se realizeaza alegand o coloana in sectiune *Sort by:*. Checkbox-ul **DESC** ofera posibilatea sortarii in mod descrescator.
 
 Sortarea si filtrarea se pot realiza simultan. La fiecare schimbare a optiunilor de filtrare si sortare se revine la prima pagina de produse care respecta conditiile.
 
