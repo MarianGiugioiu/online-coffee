@@ -1,55 +1,51 @@
-# Online coffee shop
-O aplicatie web pentru vizualizarea si gestionarea produselor dintr-o cafenea. Aplicatia a fost realizata folosind Angular pentru frontend, Express.js pentru backend si MySQL pentru baza de date.
+Sigur, iată textul cu diacritice adăugate:
 
-## Setup
-* Este nevoie de instalarea dependentelor atat in folderul `frontend` cat si in folderul `backend` folosind comanda:
+# Magazin de cafea online
+O aplicație web pentru vizualizarea și gestionarea produselor dintr-o cafenea. Aplicația a fost realizată folosind Angular pentru frontend, Express.js pentru backend și MySQL pentru baza de date.
+
+## Configurare
+* Este nevoie de instalarea dependențelor atât în folderul `frontend` cât și în folderul `backend` folosind comanda:
 ```
 npm install
 ```
-* Credentialele bazei de date se ragasesc in fisierul `.env` din folderul `backend` in cele doua variabile:
+* Credențialele bazei de date se regăsesc în fișierul `.env` din folderul `backend` în cele două variabile:
 ```
 DB_USER=<Database user>
 DB_PASSWORD=<Database password>
 ```
-* Scriptul pentru realizarea schemei si tabelelor, impreuna cu inserarea catorva inregistrari, se regaseste in fisierul `db.sql`;
+* Scriptul pentru realizarea schemei și tabelelor, împreună cu inserarea câtorva înregistrări, se regăsește în fișierul `db.sql`;
 
-
-## Pornirea aplicatiei
-* Pentru pornirea aplicatiei Angular se va folosi in folderul `frontend` comanda:
+## Pornirea aplicației
+* Pentru pornirea aplicației Angular se va folosi în folderul `frontend` comanda:
 ```
 npm run start
 ```
-* Pentru pornirea serverului Express se va folosi in folderul `backendend` comanda:
+* Pentru pornirea serverului Express se va folosi în folderul `backend` comanda:
 ```
 npm run dev
 ```
 
 ## Mod de utilizare
-Aplicatia poate fi regasita accesand [http://localhost:4200/](http://localhost:4200/)
+Aplicația poate fi regăsită accesând [http://localhost:4200/](http://localhost:4200/)
 
+Din bara de navigare se poate naviga către pagina principală și pagina de autentificare. Există două tipuri de utilizatori: simpli și administratori.
 
-Din bara de navigare se poate naviga catre pagina principala si pagina de autentificare. Exista doua tipuri de utilizatori: simpli si administratori.
+Pagina principală conține o secțiune dedicată listei de produse disponibile și o secțiune dedicată coșului de produse selectate de utilizator.
 
-Pagina principala contine o sectiune dedicata listei de produse disponibile si o sectiune dedicata cosului de produse selectate de utilizator.
+Pe pagina sunt afișate maxim 4 produse disponibile, fiind posibilă navigarea între paginile de produse.
 
-Pe pagina sunt afisate maxim 4 produse disponibile, fiind posibila navigarea intre paginile de produse.
+Atât datele despre utilizatorul curent autentificat și datele despre coșul de cumpărături sunt salvate în **local storage**.
 
-Atat datele despre utilizatorul curent autentificat si datele despre cosul de cumparaturi sunt salvate in **local storage**.
+Lista de cumpărături poate fi modificată fără ca un utilizator să fie conectat și va persista atunci când un utilizator se conectează. Aceasta va fi resetată totuși când utilizatorul curent se deconectează.
 
-Lista de cumparaturi poate fi modificata fara ca un utilizator sa fie conectat si va persista atunci cand un utilizator se conecteaza. Aceasta va fi resetata totusi cand utilizatorul curent se deconecteaza.
+Apăsând pe imaginea unui produs va redirecționa utilizatorul către pagina de detalii a produsului.
 
-Apasand pe imaginea unui produs va redirectiona utilizatorul catre pagina de detalii a produsului.
+Dacă utilizatorul este un administrator atunci acesta poate să editeze detaliile unui produs, să îl șteargă sau să creeze un nou produs.
 
-Daca utilizatorul este un administrator atunci acesta poate sa editeze detaliile unui produs, sa il stearga sau sa creeze un nou produs.
+Pentru conectarea cu un cont de administrator se pot folosi email-ul `alin.ion@admin.com` și parola `123`. Pentru conectarea cu un cont simplu se pot folosi email-ul `alin.andrei@gmail.com` și parola `123`.
 
-Pentru conectarea cu un cont de administrator se pot folosi email-ul `alin.ion@admin.com` si parola `123`. Pentru conectarea cu un cont simplu se pot folosi email-ul `alin.andrei@gmail.com` si parola `123`.
+Filtrarea produselor se realizează introducând o valoare în câmpul *Search* și alegând coloana pentru care se dorește filtrarea.
 
+Sortarea se realizează alegând o coloană în secțiunea *Sort by:*. Checkbox-ul **DESC** oferă posibilitatea sortării în mod descrescător.
 
-Filtrarea produselor se realizeaza introducand o valoare in campul *Search* si alegand coloana pentru care se doreste filtrarea.
-
-Sortarea se realizeaza alegand o coloana in sectiune *Sort by:*. Checkbox-ul **DESC** ofera posibilatea sortarii in mod descrescator.
-
-Sortarea si filtrarea se pot realiza simultan. La fiecare schimbare a optiunilor de filtrare si sortare se revine la prima pagina de produse care respecta conditiile.
-
-
-
+Sortarea și filtrarea se pot realiza simultan. La fiecare schimbare a opțiunilor de filtrare și sortare se revine la prima pagină de produse care respectă condițiile.
