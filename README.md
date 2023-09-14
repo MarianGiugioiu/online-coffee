@@ -25,7 +25,7 @@ npm run dev
 ```
 
 ## Mod de utilizare
-Aplicatia poate fi regasita accesand [http://localhost:4200/](http://localhost:4200/)
+Aplicatia poate fi regasita accesand [https://onlinecoffeeshop.co.za](https://onlinecoffeeshop.co.za)
 
 
 Din bara de navigare se poate naviga catre pagina principala si pagina de autentificare. Exista doua tipuri de utilizatori: simpli si administratori.
